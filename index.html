@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app='mini'>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./index.css">
+    <title>MiniGames</title>
+  </head>
+  <body>
+
+    <div class="homeClosed">
+    <div class="brix"><a  ui-sref='brix'><i class="fa fa-user fa-2x"></i></a></div>
+    <div class="ticTackToe"><a ui-sref='ticTackToe'><i class="fa fa-graduation-cap fa-2x"></i></a></div>
+    <div class="maze"><a ui-sref='maze'><i class="fa fa-code fa-2x"></i></a></div>
+    <div class="simon"><a ui-sref='simon'><i class="fa fa-envelope-o fa-2x"></i></a></div>
+    <div class="home"><a ui-sref='home'><i class="fa fa-home fa-3x"></i></a></div>
+  </div>
+  <ui-view></ui-view>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
+    <script   src="http://code.jquery.com/jquery-3.1.1.js"   integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="   crossorigin="anonymous"></script>
+    <script src="./app.js"></script>
+    <script src="./index.js" type="text/javascript"></script>
+    <script src="./controllers/brixCtrl.js"></script>
+    <script src="./controllers/mazeCtrl.js"></script>
+    <script src="./controllers/simonCtrl.js"></script>
+    <script src="./controllers/ticTackToeCtrl.js"></script>
+  </body>
+</html>
+<head>

@@ -1,16 +1,12 @@
 
-
-<button class="mazeEnd" ng-click="showme=true">Hide</button>
 <button class="mazeStart" ng-click="showme=false">Show</button>
 
 <div >
-    <div class="mazeBackground" ng-hide="showme">
-      <div class="mazeTrack"></div>
-      <!-- <div class="mazeBackground"></div> -->
+    <div class="mazeBackground"  ng-hide="showme">
+      <button class="mazeEnd" ng-hide="showme" ng-mouseenter="youWin(); showme=true">Hide</button>
+      <div class="mazeTrack" ng-mouseleave='gameOver(); showme=true'></div>
     <div class="mazeBackground" ng-show="showme">
       <div class="mazeTrack"></div>
-      <!-- <div class="mazeBackground"></div> -->
-
     </div>
     </div>
 </div>

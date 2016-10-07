@@ -1,6 +1,16 @@
-<div class="mazeBackground">
-  <div class="mazeTrack">
-    <button class="mazeStart" type="button" name="start">start</button>
-    <button class="mazeEnd" type="button" name="stop">stop</button>
-  </div>
+
+
+<button class="mazeEnd" ng-click="showme=true">Hide</button>
+<button class="mazeStart" ng-click="showme=false">Show</button>
+
+<div >
+    <div class="mazeBackground" ng-hide="showme">
+      <div class="mazeTrack"></div>
+      <!-- <div class="mazeBackground"></div> -->
+    <div class="mazeBackground" ng-show="showme">
+      <div class="mazeTrack"></div>
+      <!-- <div class="mazeBackground"></div> -->
+
+    </div>
+    </div>
 </div>

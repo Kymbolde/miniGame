@@ -1,3 +1,95 @@
+/*----------------------Simon Below-----------------------------------*/
+.simonContainer{
+    position: relative;
+    width: 1000px;
+    height: 700px;
+    z-index: 2;
+    background: rgb(140, 140, 140);
+    margin-top: 0px;
+    margin-left: 250px;
+}
+.simonBackground{
+  position: relative;
+  background: lightgray;
+  height: 80vh;
+  width: 80vh;
+  border-radius: 100%;
+  left: 12vw;
+  padding: 1.257vh;
+  box-sizing: border-box;
+}
+.simonRed{
+  display: inline-block;
+  width: 38vh;
+  height:38vh;
+  border-top-left-radius: 100%;
+  border-top-right-radius: 0%;
+  border-bottom-right-radius: 0%;
+  border-bottom-left-radius: 0%;
+  background: rgb(186, 0, 0);
+  outline: none;
+}
+.simonBlue{
+  display: inline-block;
+  width: 38vh;
+  height:38vh;
+  border-top-left-radius: 0%;
+  border-top-right-radius: 100%;
+  border-bottom-right-radius: 0%;
+  border-bottom-left-radius: 0%;
+  background: rgb(0, 0, 186);
+  outline: none;
+}
+.simonGreen{
+  display: inline-block;
+  width: 38vh;
+  height:38vh;
+  border-top-left-radius: 0%;
+  border-top-right-radius: 0%;
+  border-bottom-right-radius: 0%;
+  border-bottom-left-radius: 100%;
+  background: rgb(0, 186, 0);
+  outline: none;
+}
+.simonYellow{
+  display: inline-block;
+  width: 38vh;
+  height:38vh;
+  border-top-left-radius: 0%;
+  border-top-right-radius: 0%;
+  border-bottom-right-radius: 100%;
+  border-bottom-left-radius: 0%;
+  background: rgb(186, 186, 0);
+  z-index: 99;
+  outline: none;
+}
+.simonMiddle{
+  height: 30vh;
+  width: 30vh;
+  border-radius: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  background: lightgray;
+}
+.simonMiddle2{
+  height: 28vh;
+  width: 28vh;
+  border-radius: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 101;
+  background: rgb(140, 140, 140);
+  text-align: center;
+  line-height: 28vh;
+  outline: none;
+  font-weight: bolder;
+}
+
 /*----------------------home Below-----------------------------------*/
 .homeH1 {
   width: 100%;

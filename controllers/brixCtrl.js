@@ -5,14 +5,14 @@ angular.module('mini')
   var ballRadius = 10;
   var x = canvas.width / 2;
   var y = canvas.height - 30;
-  var dx = 10;
-  var dy = -10;
+  var dx = 7;
+  var dy = -7;
   var paddleHeight = 10;
   var paddleWidth = 120;
   var paddleX = (canvas.width - paddleWidth) / 2;
   var rightPressed = false;
   var leftPressed = false;
-  var brickRowCount = 10;
+  var brickRowCount = 13;
   var brickColumnCount = 4;
   var brickWidth = 40;
   var brickHeight = 20;
@@ -65,12 +65,12 @@ angular.module('mini')
       for (c = 0; c < brickColumnCount; c++) {
           for (r = 0; r < brickRowCount; r++) {
               var b = bricks[c][r];
-              if (b.status == 1) {
-                  if (x > b.x && x < b.x + brickWidth && y > b.y && y < b.y + brickHeight) {
+              if (b.status === 1) {
+                  if (x > b.x && x < b.x + brickWidth + ballRadius && y > b.y && y < b.y + brickHeight + ballRadius) {
                       dy = -dy;
                       b.status = 0;
                       score++;
-                      if (score == brickRowCount * brickColumnCount) {
+                      if (score === brickRowCount * brickColumnCount) {
                           alert("YOU WIN, CONGRATS!");
                           document.location.reload();
                       }
@@ -151,8 +151,8 @@ angular.module('mini')
               } else {
                   x = canvas.width / 2;
                   y = canvas.height - 30;
-                  dx = 10;
-                  dy = -10;
+                  dx = 7;
+                  dy = -7;
                   paddleX = (canvas.width - paddleWidth) / 2;
               }
           }

@@ -1,12 +1,17 @@
 
-<button class="mazeStart" ng-click="showme=false">Show</button>
+<button class="mazeStart" ng-click="showme=false">Start</button>
 
-<div >
     <div class="mazeBackground"  ng-hide="showme">
-      <button class="mazeEnd" ng-hide="showme" ng-mouseenter="youWin(); showme=true">Hide</button>
       <div class="mazeTrack" ng-mouseleave='gameOver(); showme=true'></div>
+      <button class="mazeEnd" ng-hide="showme" ng-mouseenter="youWin(); showme=true">Stop</button>
     <div class="mazeBackground" ng-show="showme">
       <div class="mazeTrack"></div>
     </div>
     </div>
 </div>
+<h1 class="homeH1">
+   <p class="homeMessage">Welcome to the mouse maze mini game. <br>
+     Try to navigate to the end of the maze keeping your mouse inside the track<br>
+     Please click the start button in the bottom right hand corner to start the game.</p>
+ </h1>
+<div >
